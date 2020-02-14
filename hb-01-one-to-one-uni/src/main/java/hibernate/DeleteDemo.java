@@ -29,9 +29,8 @@ public class DeleteDemo {
 			session.beginTransaction();
 
 			// get instructor by primary key / id
-			int theId = 1;
-			Instructor tempInstructor = 
-					session.get(Instructor.class, theId);
+			int theId = 4;
+			Instructor tempInstructor = session.get(Instructor.class, theId);
 			
 			System.out.println("Found instructor: " + tempInstructor);
 			
@@ -55,10 +54,4 @@ public class DeleteDemo {
 			factory.close();
 		}
 	}
-
 }
-
-
-
-
-
